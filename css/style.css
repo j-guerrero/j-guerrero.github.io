@@ -49,3 +49,9 @@ body{
 	text-decoration: none;
 	color:white;
 }
+
+@media (max-width: 728px) {
+  .animated {
+    animation-name: none;
+  }
+}
