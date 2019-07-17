@@ -1,7 +1,9 @@
 body{
 	margin-top: 100px;
 	background-color:white;
-	overflow:hidden;
+}
+.animated{
+	overflow: hidden !important;
 }
 .navbar{
 	background-color:#3d423e;
