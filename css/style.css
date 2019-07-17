@@ -3,7 +3,7 @@ body{
 	background-color:white;
 }
 .animated{
-	overflow: hidden !important;
+	overflow-x: hidden !important;
 }
 .navbar{
 	background-color:#3d423e;
