@@ -1,6 +1,7 @@
 body{
 	margin-top: 100px;
 	background-color:white;
+	overflow:hidden;
 }
 .navbar{
 	background-color:#3d423e;
