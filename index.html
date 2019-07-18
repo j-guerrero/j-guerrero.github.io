@@ -3,13 +3,14 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.css"><link rel="stylesheet" type="text/css" href="css\animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css\style.css">
 
 </head>
 <body>
-	<nav class="navbar fixed-top justify-content-end animated fadeInDown slow delay-2s slow">
-			<div class="navbar-text">
-			<button type="button" class="btn btn-success">
+	<nav class="navbar justify-content-center align-baseline animated fadeInDown slow delay-2s slow">
+			<div class="navbar-text p-0">
+			<button type="button" class="btn-sm btn">
 				<a id="cv" href='files/cv-july-2019.pdf' download target="_blank">
 				 <img src="img/logos/resume-96px.png" width="24px" height="auto">
 				 Download CV
@@ -20,74 +21,104 @@
 
 	<div class="container-fluid">
 
+		<!-- First load  -->
 		<div class="text-center top">
-			<img class="animated fadeInUp slow" id="profile-pic" src="img/profile-pic.png">
+			<img class="animated fadeInUp slow mb-3" id="profile-pic" src="img/profile-pic.png">
 			<div class="animated fadeIn delay-2s">
 				<h1>Joshua Guerrero</h1>
 				<h3>Wasilla, AK</h3>
 				<h5>Website Developer Extraordinaire</h5>
 				<div class="text-center" style="margin:20px">
 					<a href="https://github.com/j-guerrero" target="_blank">
-						<img src='img/logos/GitHub-Mark-120px-plus.png' width='75px' height='auto'/>
+						<img id="socialMediaIcon" src='img/logos/social-media/GitHub-Mark-120px-plus.png'/>
 					</a>
 					<a href="https://www.twitter.com" target="_blank">
-						<img src='img/logos/Twitter-Rounded-150px.png' width='75px' height='auto'/>
+						<img id="socialMediaIcon" src='img/logos/social-media/Twitter-Rounded-150px.png' width='75px' height='auto'/>
 					</a>
 					<a href="https://www.instagram.com" target="_blank">
-						<img src='img/logos/instagram-150px.png' width='75px' height='auto'/>
+						<img id="socialMediaIcon" src='img/logos/social-media/instagram-150px.png'/>
+					</a>
+					<a href="https://www.linkedin.com/in/joshua-guerrero-ak" target="_blank">
+						<img id="socialMediaIcon" src='img/logos/social-media/linked-in-150px.png'/>
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="row blue align-items-center justify-content-around">
-			<div class="row col-12 justify-content-center pb-4">
-				<h1>Projects</h1>
-			</div>
-			<div class="col-3">
+		<!-- Projects  -->
+		<!-- WORK ON = switch to stack @ 1050px -->
+		<div id="face-app" class="row blue align-items-center justify-content-center">
+			<div class="col-lg-6 col-sm-12 pl-5 pr-5 mb-3">
+				<h2 class='text-center'>
+					<a href="https://j-guerrero.github.io/react-face-recognition-brain/" target="blank">
+						Face Recognition
+					</a>
+				</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et dolor accumsan, tincidunt ex eu, fringilla est. Vivamus nec mi interdum justo finibus ultricies. Etiam placerat dictum libero vel malesuada. Sed facilisis sollicitudin rhoncus. Maecenas suscipit et quam in mollis. Pellentesque ac commodo tellus. Pellentesque rutrum hendrerit molestie.
-
-					Aenean placerat gravida turpis a semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit eros, lobortis at fringilla at, dapibus sed neque. Maecenas et diam ligula. Morbi elementum ornare metus, at imperdiet nunc molestie in. Aliquam a fermentum urna. Praesent pellentesque ipsum magna, fermentum tincidunt quam imperdiet sit amet. Morbi tincidunt vestibulum purus, vel posuere nunc finibus nec. Integer congue diam vitae accumsan aliquet. 
+					A web application that allows users to submit image ULRs and apply a bounding box around the face in the image. Additional back-end API created to handle fetch calls to NodeJS server. Created for a bootcamp project and customized further after completion of course.
 				</p>
-			</div>
-			<div class="col-3">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et dolor accumsan, tincidunt ex eu, fringilla est. Vivamus nec mi interdum justo finibus ultricies. Etiam placerat dictum libero vel malesuada. Sed facilisis sollicitudin rhoncus. Maecenas suscipit et quam in mollis. Pellentesque ac commodo tellus. Pellentesque rutrum hendrerit molestie.
-
-					Aenean placerat gravida turpis a semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit eros, lobortis at fringilla at, dapibus sed neque. Maecenas et diam ligula. Morbi elementum ornare metus, at imperdiet nunc molestie in. Aliquam a fermentum urna. Praesent pellentesque ipsum magna, fermentum tincidunt quam imperdiet sit amet. Morbi tincidunt vestibulum purus, vel posuere nunc finibus nec. Integer congue diam vitae accumsan aliquet. 
+					Technologies Used: React.JS, Node.JS, Postgres, Redis, Heroku, GitHub Pages
 				</p>
+
+				<div class="dependency-logos row align-items-center justify-content-center">
+					<img src="img/logos/dependencies/react-js.png">
+					<img src="img/logos/dependencies/node-js.png">
+					<img src="img/logos/dependencies/postgres.png">
+					<img src="img/logos/dependencies/redis.png">
+					<img src="img/logos/dependencies/heroku.png">
+					<img src="img/logos/dependencies/github-pages.png">
+				</div>
+
 			</div>
-			<div class="col-3">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et dolor accumsan, tincidunt ex eu, fringilla est. Vivamus nec mi interdum justo finibus ultricies. Etiam placerat dictum libero vel malesuada. Sed facilisis sollicitudin rhoncus. Maecenas suscipit et quam in mollis. Pellentesque ac commodo tellus. Pellentesque rutrum hendrerit molestie.
-
-					Aenean placerat gravida turpis a semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit eros, lobortis at fringilla at, dapibus sed neque. Maecenas et diam ligula. Morbi elementum ornare metus, at imperdiet nunc molestie in. Aliquam a fermentum urna. Praesent pellentesque ipsum magna, fermentum tincidunt quam imperdiet sit amet. Morbi tincidunt vestibulum purus, vel posuere nunc finibus nec. Integer congue diam vitae accumsan aliquet. 
-				</p>
+			<div class="col-lg-6 col-sm-12 pl-5 pr-5 text-center">
+				<img id="face-app" src='img/face-mockup.png' width="100%" height="auto" style='border-radius: 5%;box-shadow: 0px 3px 5px 5px #505a5f;'>
 			</div>
 		</div>
 
-		<div class="row align-items-center justify-content-around white">
-			<div class="col-4 text-center">
+		<div id="face-app" class="row white align-items-center justify-content-center">
+			<div class="col-lg-6 col-sm-12 pl-5 pr-5 text-center">
+				<img id="face-app" src='img/robofriends-mockup.png' width="100%" height="auto" style='border-radius: 5%;'>
+			</div>
+			<div class="col-lg-6 col-sm-12 pl-5 pr-5 mb-3">
+				<h2 class='text-center'>
+					<a href="https://j-guerrero.github.io/robofriends/" target="blank">
+						Robofriends
+					</a>
+				</h2>
+				<p>
+					A web application that demonstrates real-time search of a list of generated profiles using React+Redux for state management.Created for a bootcamp project and customized further after completion of course.
+				</p>
+				<p>
+					Technologies Used: React.JS, Redux, GitHub Pages
+				</p>
+
+				<div class="dependency-logos-white row align-items-center justify-content-center">
+					<img src="img/logos/dependencies/react-js.png">
+					<img src="img/logos/dependencies/redux.png" style='height:50px'>
+					<img src="img/logos/dependencies/github-pages.png">
+				</div>
+			</div>
+		</div>
+
+		<!-- Education -->
+		<div class="row align-items-center justify-content-around  blue">
+			<div class="col-lg-6 col-sm-12 text-center mb-5">
 				<h1>University of Alaska Fairbanks</h1>
 				<hr />
 				<h2>Bachelors of Science</h2>
 				<h2>Interdisciplinary Studies</h2>
 				<h5>Minor of Computer Science</h5>
 				<hr />
-				<h5>Graduated Fall of 2018</h5>
+				<h2>Graduated Fall of 2018</h2>
 			</div>
-			<div class="col-4">
-				<img src='img/graduation.png' style='border-radius: 5%'/>
+			<div class="col-lg-6 col-sm-12 text-center">
+				<img src='img/graduation.png' style='border-radius: 5%' width="auto" height="500px"/>
 			</div>
 		</div>
 
-		<div class="row blue">
-			test
-		</div>
-
-		<div class="row white">
-			test
+		<div class="row align-items-center justify-content-around  white">
+			contact me  @ jrg99654@gmail.com
 		</div>
 
 	</div>
