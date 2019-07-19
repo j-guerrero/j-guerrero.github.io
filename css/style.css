@@ -1,24 +1,32 @@
-html, body {
-  overflow-x: hidden;
-}
-
 h1,h2{
 	font-family: 'Open Sans', sans-serif;
 }
 
-body{
-	background-color:white;
+body {
+  background-image: radial-gradient(#fafafa 20%, transparent 20%),
+  radial-gradient(#fafafa 20%, transparent 20%);
+  background-color: white;
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+  height: 200px;
+  width: 100%;
 }
 
+
 /* Alternating Info Rows */
+
+.row{
+	margin-left: 10px;
+	margin-right: 10px;
+}
 .white{
-	background-color: white;
+	background-color: transparent;
 	padding: 0px 10px;
 
 }
 
 .blue{
-	background-color: #c5dbe8;
+	background-color: #c5dbe8AA;
 	color:black;
 	clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 	padding: 10px 10px;
@@ -27,7 +35,7 @@ body{
 /* CV Download */
 .navbar{
 	height: 50px;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,.5);
 	padding-bottom: 100px
 }
 
@@ -71,25 +79,25 @@ body{
 }
 
 .dependency-logos{
-	background:rgba(255,255,255,0.3);
 	margin:0 10px;
 	width:auto;
 	padding:5px;
 }
 
-.dependency-logos-white{
-	background:rgba(0,0,0,0.3);
-	margin:0 10px;
-	width:auto;
-	padding:5px;
+.grad-img-sm{
+	display:none;
 }
 
+.grad-img-lg{
+		width:300px;
+		height:auto;
+		border-radius: 5%
+}
 
 
 @media (max-width: 575px) {
 	.blue,.white{
-		font-size:12px;
-		padding:30px 0;
+		font-size:15px;
 	}
 
 	.dependency-logos, .dependency-logos-white{
@@ -120,9 +128,20 @@ body{
 	.dependency-logos, .dependency-logos-white{
 		display: none
 	}
+
+	.grad-img-sm{
+		width:300px;
+		height:auto;
+		border-radius: 5%;
+		display: block;
+	}
+
+	.grad-img-lg{
+		display: none;
+	}
 }
 
-@media (min-width: 992px) and (max-width: 1199px) { 	
+@media (min-width: 992px){ 	
 	.blue,.white{
 		font-size:18px;
 		padding:50px 0;
