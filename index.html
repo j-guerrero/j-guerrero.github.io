@@ -3,7 +3,7 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.css"><link rel="stylesheet" type="text/css" href="css\animate.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css\style.css">
 
 </head>
@@ -36,12 +36,17 @@
 					</a>
 				</div>
 			</div>
+			<div class="mt-5 animated fadeIn delay-2s">
+				<img class="animated bounce infinite slow" src="img/arrow.png" height="50px" width="auto">
+			</div>
+			
 		</div>
 
 		<!-- Projects  -->
 		<!-- WORK ON = switch to stack @ 1050px -->
-		<div id="face-app" class="row blue align-items-center justify-content-center animated fadeInUp delay-3s slow mb-3">
-			<div class="col-lg-6 col-sm-12 pl-5 pr-5 mb-3">
+	<div class="scroll-animations">
+		<div id="face-app" class="animated row blue align-items-center justify-content-center mb-3 p5">
+			<div class="col-6 col-sm-12 col-lg-6 pl-5">
 				<h2 class='text-center'>
 					<a href="https://j-guerrero.github.io/react-face-recognition-brain/" target="blank">
 						Face Recognition
@@ -64,16 +69,19 @@
 				</div>
 
 			</div>
-			<div class="col-lg-6 col-sm-12 pl-5 pr-5 text-center">
+			<div class="col-6 col-sm-12 col-lg-6  p-5 text-center">
 				<img id="face-app" src='img/face-mockup.png' width="100%" height="auto" style='border-radius: 5%;box-shadow: 0px 3px 5px 5px #505a5f;'>
 			</div>
 		</div>
+	</div>
 
-		<div id="face-app" class="row white align-items-center justify-content-center animated fadeInUp delay-3s slow">
-			<div class="col-lg-6 col-sm-12 pl-5 pr-5 text-center">
+<!-- Robofriends -->
+	<div class="scroll-animations">
+		<div id="face-app" class="animated row white align-items-center justify-content-center">
+			<div class="col-6 col-lg-6 col-sm-12 pl-5 pr-5 text-center">
 				<img id="face-app" src='img/robofriends-mockup.png' width="100%" height="auto" style='border-radius: 5%;'>
 			</div>
-			<div class="col-lg-6 col-sm-12 pl-5 pr-5 mb-3">
+			<div class="col-6 col-lg-6 col-sm-12 pl-5 pr-5 mb-0">
 				<h2 class='text-center'>
 					<a href="https://j-guerrero.github.io/robofriends/" target="blank">
 						Robofriends
@@ -93,10 +101,11 @@
 				</div>
 			</div>
 		</div>
-
+	</div>
 		<!-- Education -->
-		<div class="row align-items-center justify-content-around blue">
-			<div class="col-lg-6 col-sm-12 text-center mb-5">
+	<div class="scroll-animations">
+		<div class="row align-items-center justify-content-around blue p-5 animated">
+			<div class="col-lg-6 col-sm-12 text-center mb-2">
 				<h1>University of Alaska Fairbanks</h1>
 				<hr />
 				<h2>Bachelors of Science</h2>
@@ -106,15 +115,17 @@
 				<h2>Graduated Fall of 2018</h2>
 			</div>
 			<div class="col-lg-6 col-sm-12 text-center">
-				<img src='img/graduation.png' style='border-radius: 5%' width="auto" height="500px"/>
+				<img src='img/graduation.png' style='border-radius: 5%' width="auto" height="400px"/>
 			</div>
 		</div>
-
-		<div class="row align-items-center justify-content-around  white">
+		<div class="row align-items-center justify-content-around animated white">
 			contact me  @ jrg99654@gmail.com
 		</div>
-
 	</div>
+	</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>
