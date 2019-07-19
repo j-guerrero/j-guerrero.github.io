@@ -8,20 +8,9 @@ h1,h2{
 
 body{
 	background-color:white;
-	margin-right:0;
 }
 
-
-.navbar{
-	height: 50px;
-	background-color: rgba(255,255,255,1);
-	padding-bottom: 100px
-}
-
-.top{
-	color:black;
-}
-
+/* Alternating Info Rows */
 .white{
 	background-color: white;
 	padding: 0px 10px;
@@ -35,9 +24,11 @@ body{
 	padding: 10px 10px;
 }
 
-#profile-pic{
-	border-radius: 50%;
-	box-shadow: 0px 3px 5px 5px #cfd9df;
+/* CV Download */
+.navbar{
+	height: 50px;
+	background-color: rgba(255,255,255,1);
+	padding-bottom: 100px
 }
 
 .btn-success{
@@ -56,37 +47,84 @@ body{
 	border-color:black;
 }
 
-
 #cv{
 	text-decoration: none;
 	color:black;
 }
+
+/* Images */
+#profile-pic{
+	border-radius: 50%;
+	box-shadow: 0px 3px 5px 5px #cfd9df;
+}
+
 
 #socialMediaIcon{
 	width: 50px;
 	height: auto;
 }
 
-.dependency-logos img{
+.dependency-logos img, .dependency-logos-white img{
 	width:auto;
-	height:30px;
+	height:40px;
 	padding: 5px 5px;
 }
 
 .dependency-logos{
 	background:rgba(255,255,255,0.3);
 	margin:0 10px;
-	padding:5px;
-}
-
-.dependency-logos-white img{
 	width:auto;
-	height:30px;
-	padding: 5px 5px;
+	padding:5px;
 }
 
 .dependency-logos-white{
 	background:rgba(0,0,0,0.3);
 	margin:0 10px;
+	width:auto;
 	padding:5px;
+}
+
+
+
+@media (max-width: 575px) {
+	.blue,.white{
+		font-size:12px;
+		padding:30px 0;
+	}
+
+	.dependency-logos, .dependency-logos-white{
+		display: none
+	}
+
+	h1{
+		font-size:25px;
+	}
+
+	h2{
+		font-size:20px;
+	}
+
+	h5{
+		font-size:16px;
+	}
+}
+
+/*Ipad*/
+@media (min-width: 768px) and (max-width: 991px) { 
+	.blue,.white{
+		font-size:20px;
+		padding:50px 0;
+		padding-bottom:100px;
+	}
+
+	.dependency-logos, .dependency-logos-white{
+		display: none
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 	
+	.blue,.white{
+		font-size:18px;
+		padding:50px 0;
+	} 
 }
