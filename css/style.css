@@ -34,9 +34,27 @@ body {
 
 /* CV Download */
 .navbar{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
 	height: 50px;
-	background-color: rgba(255,255,255,.5);
-	padding-bottom: 100px
+	background-color: rgba(255,255,255,1);
+}
+
+.navbar-text{
+	display: flex;
+	grid-column: 3/3;
+	justify-content: end;
+}
+
+.navbar-logo{
+	display: flex;
+	grid-column: 1/2;
+	justify-content: start;
+}
+
+.top{
+	padding-top: 100px;
 }
 
 .btn-success{
@@ -94,7 +112,7 @@ body {
 		border-radius: 5%
 }
 
-
+/* --- MEDIA QUERIES --- */
 @media (max-width: 575px) {
 	.blue,.white{
 		font-size:15px;
